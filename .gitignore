@@ -259,3 +259,5 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/Лабораторная работа 1.Макарихин Павел.docx
+/Statistic.txt

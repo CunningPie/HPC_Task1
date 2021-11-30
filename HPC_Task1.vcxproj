@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <OpenMPSupport>true</OpenMPSupport>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -115,6 +116,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Main.c" />
+    <ClCompile Include="MatrixFunc.c" />
+    <ClCompile Include="ParallelSolve.c" />
+    <ClCompile Include="SequentialSolve.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MatrixFunc.h" />
+    <ClInclude Include="ParallelSolve.h" />
+    <ClInclude Include="SequentialSolve.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
